@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* fundo claro */
+    color: #4F4F4F; /* Cinza Escuro */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #1F3A63; /* Azul Escuro */
+    color: #FFFFFF; /* Branco */
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo img {
+    max-width: 200px; /* Limitar a largura da logo */
+    margin-bottom: 15px;
+}
+
+/* Seções de vídeo e cursos */
+.video-section, .courses, main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #FFFFFF; /* Fundo Branco */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.video-section h2, .courses h2 {
+    color: #1F3A63; /* Azul Escuro */
+    margin-bottom: 15px;
+}
+
+video, iframe {
+    width: 100%; /* Responsividade */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões de cursos */
+.course-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-buttons a {
+    display: block;
+    width: 200px; /* Largura fixa dos botões */
+    margin: 10px;
+}
+
+.course-buttons img {
+    width: 100%; /* Imagem responsiva */
+    border-radius: 8px;
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.course-buttons img:hover {
+    transform: scale(1.05); /* Efeito de hover */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #1F3A63; /* Azul Escuro */
+    color: #FFFFFF; /* Branco */
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    margin-top: 10px;
+}
+
+.footer-content a {
+    color: #CFAF45; /* Dourado */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos adicionais para os módulos e tópicos */
+.module {
+    margin: 20px 0;
+    padding: 15px;
+    background: #E1E1E1; /* Cinza Claro */
+    border-radius: 8px;
+}
+
+.module h2 {
+    color: #1F3A63; /* Azul Escuro */
+}
+
+.module .topic {
+    margin: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .course-buttons {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center;
+    }
+
+    .course-buttons a {
+        width: 90%; /* Largura em tela pequena */
+    }
+
+    header .logo img {
+        max-width: 150px; /* Dimensões da logo em telas menores */
+    }
+}
